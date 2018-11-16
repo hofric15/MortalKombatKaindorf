@@ -9,13 +9,6 @@ package MKK;
  *
  * @author Richard Hofmeister
  */
-public abstract class Item {
-
-    private int deltaAttack;
-    private int deltaDefense;
-
-    public Item(int deltaAttack, int deltaDefense) {
-        this.deltaAttack = deltaAttack;
-        this.deltaDefense = deltaDefense;
-    }
+public class Sword {
+    
 }

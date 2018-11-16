@@ -27,7 +27,19 @@ public abstract class Player {
     
     public void fight(Player p)
     {
-        hp = hp-(p.getAttack()-defense);
+        if(p.getAttack()-defense > 0)
+        {
+            hp = hp-(p.getAttack()-defense);
+            System.out.println("Boom Bich!");
+        }
+        else
+        {
+            System.out.println("Der Rüstungswert ist zu hoch !!!");
+        }
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
     }
     
     public void addItem(Item i)
